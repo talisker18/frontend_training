@@ -1,0 +1,22 @@
+/*see also: css boxmodel
+
+it allows developers to add borders and define space between the content (like margin)
+it consists of 4 edges, we can define these e.g. for a div:
+    1. content edge - it contains the actual (html) content
+    2. padding edge - it lies in between the content and border edge
+    3. border edge - padding is followed by border edge
+    4. margin edge - outside border that controls the margin of a page
+
+*/
+
+p,h2 {
+    color: green;
+}
+
+ol{
+    color: rgb(255, 0, 170);
+}
+
+#un1{ /*selector by id*/
+    color: rgb(230, 129, 63)
+}

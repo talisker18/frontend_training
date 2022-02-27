@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Joel"/>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <title>form example</title>
+    <body>
+        <h1>form example</h1>
+        <form action="login-backend" method="get">
+            <label for="firstName">First Name:</label>
+            <!-- autofocus: only 1 field can be autofocused; required: this field must be filled in before submitting the form -->
+            <input type="text" id="firstName" name="firstName" autocomplete="off" autofocus required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="optional"><br>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country"><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"><br>
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" min="0" max="9999"><br>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age"><br><br>
+
+            <div id="genderField" name="genderField">
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+            </div>
+
+            <div id="employmentStatus" name="employmentStatus">
+                <fieldset>
+                    <legend>employment Status</legend>
+                    <input type="checkbox" name="student" id="student">
+                    <label for="checkbox">student</label>
+                    <input type="checkbox" name="unemployed" id="unemployed">
+                    <label for="checkbox">unemployed</label>
+                </fieldset>
+            </div>
+            <br><br>
+
+            <div id="bioField" name="bioField">
+                <label for="bio">Bio</label><br>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+
+            <div id="emailField" name="emailField">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div id="helpTextField" name="helpTextField">
+                <label for="helpText">Help Text</label>
+                <input type="text" id="helpText" name="helpText" readonly value="help text">
+            </div>
+
+            <div id="dobField" name="dobField">
+                <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <input type="submit" value="Submit"><br>
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Joel"/>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../css/example.css">
+        <style>
+            h1{
+                color: blue;
+            }
+            .colored-paragraph{ /*define css class and use it inline*/
+                color:teal;
+            }
+
+            .my-class{ /*another class*/
+                font-size: 50px;
+                text-align: center;
+            }
+
+            .box-model-demo{ /*see the boxmodel in developer tools*/
+                margin: 30px; 
+                border: 2px solid blue;
+                padding: 20px;
+                content: 50px;
+                background-color: yellow;
+            }
+
+            ul > li{ /*only target list elements of unordered lists*/
+                color: brown;
+            }
+
+            #div-in-center{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <title>form example</title>
+    <body>
+        <h1>form example</h1>
+        <h2>test</h2>
+        <p style="color: red">this is a paragraph in red</p>
+        <p>this is a paragraph in green</p>
+        <p>ordered list</p>
+        <ol> <!-- 123... -->
+            <li>first item</li>
+            <li class="box-model-demo">second item</li>
+            <li class="box-model-demo">third item</li>
+        </ol>
+
+        <p id="un1">unordered list</p>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <!-- using 2 classes for 1 element -->
+        <p class="colored-paragraph my-class">paragraph using css class</p>
+
+        <div id="div-in-center">
+            <p>para</p>
+            <p>para</p>
+            <p>para</p>
+            <p>ul with its div text-align center</p>
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+
+    </body>
+</html>
