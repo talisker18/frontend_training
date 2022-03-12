@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Joel"/>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../css/example.css">
+        <style>
+            
+            * { /*select all elements*/
+            box-sizing: border-box;
+            }
+
+            /* Style the top navigation bar */
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            /* Style the topnav links */
+            .topnav a { /*.topnav = class, a = element, in this case the links*/
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            /* Change color on hover */
+            .topnav a:hover {
+            background-color: rgb(182, 7, 7);
+            color: rgb(19, 9, 9);
+            }
+
+            /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+            }
+
+            body{
+                background-color: tan;
+            }
+
+            /* On screens that are 992px or less, set the background color to blue */
+            @media screen and (max-width: 992px) {
+                body {
+                    background-color: white;
+                }
+            }
+            /* On screens that are 600px or less, set the background color to olive */
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: olive;
+                }
+            }
+
+            /*nav bar*/
+
+        </style>
+    </head>
+    <title>form example</title>
+    <body>
+        <h2>Responsive navigation menu</h2>
+        <p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be displayed vertically instead of horizontally.</p>
+
+        <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        </div>
+
+    </body>
+</html>
