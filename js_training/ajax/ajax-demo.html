@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax demo</title>
+</head>
+<body>
+    <div id="ajaxDemo">
+        <h1>The XmlHttpRequestObject</h1>
+        <button type="button" onclick="replaceContent()">Change content</button>
+    </div>
+    <script>
+        function replaceContent(){
+            console.log("test");
+            let xmlhttpRequest = new XMLHttpRequest();
+            xmlhttpRequest.open("GET", "ajax_new_content.txt", true); //step2.1...method, URL, (optional) true or false
+            xmlhttpRequest.send(); //step2.2...send data to server e.g. query string.here we do not send any
+            xmlhttpRequest.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    console.log("test");
+                    document.getElementById("ajaxDemo").innerHTML = this.responseText; //or we can use responseXml
+                }
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Typography</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--if screen size is large the navbar will be expanded...at small size we see hambuger menu-->
+        <a href="https://www.github.com" class="navbar-brand">
+            <img src="joker.jpg" alt="logo" width="30" height="30">
+            Kitchen Story
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"> <!--mx-auto would align it in center...with mr-auto, align it to left-->
+                <li class="nav-item active">
+                    <a href="https://www.wog.ch" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.wog.ch" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.wog.ch" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a 
+                    href="" 
+                    class="nav-link dropdown-toggle" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false" 
+                    id="navbarDropdown" 
+                    role="button">
+                        <!--instead of using text 'Profile' we can use an icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    </a> <!--convert link to a button-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="" class="dropdown-item">View Profile</a>
+                        <a href="" class="dropdown-item">Support</a>
+                        <a href="" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!--search bar-->
+            <form action="" class="form-inline my-2 my-lg-0">
+                <input type="search" class="form-control mr-sm-2" placeholder="Search" name="search" id="search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> <!--form-control mr-sm-2  = align it right-->
+            </form>
+        </div>
+    </nav>
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

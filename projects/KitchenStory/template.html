@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--if screen size is large the navbar will be expanded...at small size we see hambuger menu-->
+        <a href="https://www.github.com" class="navbar-brand">
+            <img src="joker.jpg" alt="logo" width="30" height="30">
+            Kitchen Story
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"> <!--mx-auto would align it in center...with mr-auto, align it to left-->
+                <li class="nav-item active">
+                    <a href="https://www.wog.ch" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.wog.ch" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.wog.ch" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a 
+                    href="" 
+                    class="nav-link dropdown-toggle" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false" 
+                    id="navbarDropdown" 
+                    role="button">
+                        <!--instead of using text 'Profile' we can use an icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    </a> <!--convert link to a button-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="" class="dropdown-item">View Profile</a>
+                        <a href="" class="dropdown-item">Support</a>
+                        <a href="/logout" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!--search bar-->
+            <form action="" class="form-inline my-2 my-lg-0">
+                <input type="search" class="form-control mr-sm-2" placeholder="Search" name="search" id="search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> <!--form-control mr-sm-2  = align it right-->
+            </form>
+        </div>
+    </nav>
+    <main class="my-5"> <!--add spacing around each child component (on top and bottom)-->
+        <header class="text-center">
+            <h1 class="text-primary text-uppercase">Registration</h1>
+        </header>
+        <hr />
+
+        <header class="text-center">
+            <h1 class="text-primary text-uppercase">open link in new tab</h1>
+        </header>
+        <hr />
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
+        <section style="background-image: url('../joker.jpg');">
+            <div class="container">
+                <div class="row my-5 card text-center">
+                    <div class="col card-body">
+                        <div class="my-3">
+                            Your registration was successful and we have sent you an email. Please open this email and confirm your registration by clicking on the link.
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-lg mt-5">Go to Login</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bg-secondary text-white my-3 py-2 card text-center">
+                            <div class="card-body">
+                                card, with bg color
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col">
+                        <div class="my-3 py-2 card text-center">
+                            <div class="card-body">
+                                Your registration was successful and we have sent you an email. Please open this email and confirm your registration by clicking on the link.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="my-5">
+            <h1>different rows and cols</h1>
+      <div class="container border"> <!--container fluid would span the whole screen-->
+        <div class="row">
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="col">col3</div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-2">col1</div>
+            <div class="col-2">col2</div>
+            <div class="col-2">col3</div>
+        </div><br><br>
+        <div class="row"> <!--resize to see the difference between this and 1st row-->
+            <div class="col-md-4">col1</div>
+            <div class="col-md-4">col2</div>
+            <div class="col-md-4">col3</div>
+        </div><br><br>
+        <div class="row"> <!--resize to see the difference. here we use lg and md-->
+            <div class="col-lg-8 col-md-6">col1</div>
+            <div class="col-lg-4 col-md-6">col2</div>
+        </div>
+      </div>
+
+      <div class="container border">
+          <div class="row align-items-center" style="height: 500px">
+              <div class="col">center1</div>
+              <div class="col">center2</div>
+              <div class="col">center3</div>
+          </div>
+      </div>
+      <div class="container border">
+        <div class="row align-items-end" style="height: 500px">
+            <div class="col">end1</div>
+            <div class="col">end2</div>
+            <div class="col">end3</div>
+        </div>
+    </div>
+    <!--gutters (works only for bootstrap 5?)-->
+    <h2 class="text-center my-5">Gutter</h2> 
+    <div class="container my-5">
+        <div class="row gx-5 gy-5"> <!--margin of each column-->
+            <div class="col-6">
+                <div class="child">1</div>
+            </div>
+            <div class="col-6">
+                <div class="child">2</div>
+            </div>
+            <div class="col-6">
+                <div class="child">3</div>
+            </div>
+            <div class="col-6">
+                <div class="child">4</div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center">default buttons</h1>
+      <div class="container border"> <!--container fluid would span the whole screen-->
+        <button class="btn btn-primary">click me</button>
+        <button >click me</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+      <h1 class="text-center">outline buttons</h1>
+      <div class="container border">
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </div>
+      <h1 class="text-center">button sizes</h1>
+      <div class="container border">
+        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-primary btn-sm">Primary</button>
+        <button type="button" class="btn btn-primary btn">Primary</button>
+      </div>
+      <h1 class="text-center">disable</h1>
+      <div class="container border">
+        <button type="button" class="btn btn-primary btn-lg" disabled>Primary</button>
+        <button type="button" class="btn btn-primary btn-sm" disabled>Primary</button>
+        <button type="button" class="btn btn-primary btn">Primary</button>
+      </div>
+      <h1 class="text-center">block level buttons</h1>
+      <div class="container border">
+        <button type="button" class="btn btn-primary btn">Primary</button>
+        <button type="button" class="btn btn-block btn-primary btn">block level button</button>
+      </div>
+        </section>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+          <span class="text-muted">Copyrights <a href="http://creativecommons.org/licenses/by">go here</a></span>
+        </div>
+    </footer>
+    
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
